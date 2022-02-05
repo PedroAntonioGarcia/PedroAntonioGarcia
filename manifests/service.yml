@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: "kubernetesclusterecija3-46b1"
+    labels:
+        app: "kubernetesclusterecija3-46b1"
+spec:
+    type: LoadBalancer
+    ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+      name: http
+    selector:
+        app: "kubernetesclusterecija3-46b1"
