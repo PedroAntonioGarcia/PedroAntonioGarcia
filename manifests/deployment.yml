@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "kubernetesclusterecija3-46b1"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "kubernetesclusterecija3-46b1"
+  template:
+    metadata:
+      labels:
+        app: "kubernetesclusterecija3-46b1"
+    spec:
+      containers:
+        - name: "kubernetesclusterecija3-46b1"
+          image: "containerregistryatarfe.azurecr.io/kubernetesclusterecija3"
+          ports:
+          - containerPort: 80
